@@ -1,0 +1,67 @@
+body {
+  color: white;
+  background-color: black;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+a {
+  color: skyblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: aquamarine;
+  text-decoration: underline;
+}
+
+@media (max-width: 52ch) {
+  body {
+    font-size: 3.65vw;
+  }
+}
+
+.console_size {
+  max-width: 40em;
+  margin-bottom: 3em;
+}
+
+.lslinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.lslinks a {
+  margin-left: 1ch;
+}
+
+@media (min-width: 576px) {
+  .lslinks {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .lslinks a {
+    margin-right: 2ch;
+    margin-left: 0;
+  }
+}
+
+a.resume {
+	color: red;
+}
+
+a.github {
+	color: #6e5494;
+}
+
+a.linkedin {
+	color: #0077b5;
+}
+
+.user {
+	color: lime;
+}
+
+.path {
+	color: orange;
+}
