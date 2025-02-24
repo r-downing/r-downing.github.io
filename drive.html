@@ -1,0 +1,12 @@
+<meta http-equiv="refresh" content="0; URL=https://drive.google.com/drive/folders/1WHTnreotEdPtYJtOfUBJURBbVbCNf2tH?usp=sharing" />
+<a>click here if you are not redirected</a>
+
+<script>
+    const url = document.querySelector("meta").content.split("URL=")[1];
+    document.querySelector("a").href = url;
+    const redirect = () =>  {
+        window.location.href = url;
+    };
+    document.body.onmouseover = redirect;
+    setInterval(redirect, 5000);
+</script>
