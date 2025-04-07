@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    <link rel="canonical" href="{{ page.redir_to }}"/>
+    <meta http-equiv="refresh" content="0;url={{ page.redir_to }}" />
+</head>
+<body>
+    <h1>Redirecting...</h1>
+    <a href="{{ page.redir_to }}">Click here if you are not redirected.<a>
+    <script>location='{{ page.redir_to }}'</script>
+</body>
+</html>
