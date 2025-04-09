@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ryan_downing_resume</title>
+
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background-color: #1f1f1f;
+            color: lime;
+            font-family: "Lucida Console", Monaco, monospace;
+        }
+        a {
+            color: lime;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #main {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        #topbar {
+            /* position: absolute;
+            top: 0;
+            left: 0; */
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+        }
+        #island {
+            background-color: black;
+            border-bottom-right-radius: .25em;
+            border-bottom-left-radius: .25em;
+            padding: .5em;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="topbar">
+            <div id="island">
+                <a href="/">ryand.io</a> | <a href="https://docs.google.com/document/d/1nendZ9uaXb96sT_I1UIZhYzI5NRPghuP-Hp7BSq0vEY/export?format=pdf">export_to_pdf</a>
+            </div>
+        </div>
+
+        <!-- <div><a href="/">ryand.io</a>/resume | <a href="https://docs.google.com/document/d/1nendZ9uaXb96sT_I1UIZhYzI5NRPghuP-Hp7BSq0vEY/export?format=pdf">&lt;Export to PDF&gt;</a></div> -->
+        <iframe src="https://docs.google.com/viewer?embedded=true&url=https://docs.google.com/document/d/1nendZ9uaXb96sT_I1UIZhYzI5NRPghuP-Hp7BSq0vEY/export?format=pdf"
+        style="flex-grow: 10;" frameborder="0"></iframe>
+
+        <!-- <object data="https://docs.google.com/document/d/1nendZ9uaXb96sT_I1UIZhYzI5NRPghuP-Hp7BSq0vEY/export?format=pdf" /> -->
+
+        <!-- <iframe src="https://docs.google.com/document/d/e/2PACX-1vTaUJ0oz2d1SyZN5-ctGSbm76Y6kkKw9378yRUtGnIPv-FjBa7M7__CuynKkzJv41bl-k0Ge51yoqVy/pub?embedded=true" frameborder="0" style="flex-grow: 10;"></iframe> -->
+    </div>
+
+</body>
+</html>
