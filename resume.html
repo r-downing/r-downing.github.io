@@ -10,12 +10,12 @@
             padding: 0;
             margin: 0;
             background-color: black;
-            color: lime;
+            color: white;
             font-family: "Lucida Console", Monaco, monospace;
-            font-size: smaller;
+            font-size: larger;
         }
         a {
-            color: lime;
+            color: white;
             text-decoration: none;
         }
         a:hover {
@@ -37,6 +37,9 @@
             #topbar {
                 position: absolute;
             }
+            i:hover {
+                font-size: 2rem;
+            }
         }
         #island {
             background-color: black;
@@ -44,13 +47,37 @@
             border-bottom-left-radius: .5em;
             padding: .5em;
         }
+        .fa-house {
+            /* color: lime; */
+            color: #bababa;
+        }
+        .fa-linkedin {
+            color: #0A66C2;
+        }
+        .fa-github {
+            color: purple;
+        }
+        .fa-file-pdf {
+            color: red;
+        }
+        .fa-download {
+            color: #28A745;
+        }
+        i {
+            transition: font-size 0.3s ease;
+        }
     </style>
+    <script src="https://kit.fontawesome.com/5da3d93708.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="main">
         <div id="topbar">
             <div id="island">
-                <a href="/">home</a> | <a href="https://resume.ryand.io">export_to_pdf</a>
+                <a href="/"><i class="fa-solid fa-house" title="home"></i></a>
+                <a href="https://github.com/r-downing" target="_blank" title="github"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.ryand.io" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+                |
+                <a href="https://resume.ryand.io" title="download as .pdf"><i class="fa-solid fa-download"></i></a>
             </div>
         </div>
         <iframe id="mainframe" src="https://docs.google.com/viewer?embedded=true&url=https://resume.ryand.io" style="flex-grow: 10;" frameborder="0"></iframe>
